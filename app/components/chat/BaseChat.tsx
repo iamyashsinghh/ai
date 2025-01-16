@@ -587,7 +587,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                       {input.length > 3 ? (
                         <div className="text-xs text-bolt-elements-textTertiary">
                           Use <kbd className="kdb px-1.5 py-0.5 rounded bg-bolt-elements-background-depth-2">Shift</kbd>{' '}
-                          + <kbd className="kdb px-1.5 py-0.5 rounded bg-bolt-elements-background-depth-2">Return</kbd>{' '}
+                          + <kbd className="kdb px-1.5 py-0.5 rounded bg-bolt-elements-background-depth-2">Enter</kbd>{' '}
                           a new line
                         </div>
                       ) : null}
@@ -603,7 +603,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                   <GitCloneButton importChat={importChat} />
                 </div>
               )}
-              {!chatStarted &&
+              {/* {!chatStarted &&
                 ExamplePrompts((event, messageInput) => {
                   if (isStreaming) {
                     handleStop?.();
@@ -611,8 +611,8 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                   }
 
                   handleSendMessage?.(event, messageInput);
-                })}
-              {!chatStarted && <StarterTemplates />}
+                })} */}
+              {/* {!chatStarted && <StarterTemplates />} */}
             </div>
           </div>
           <ClientOnly>{() => <Workbench chatStarted={chatStarted} isStreaming={isStreaming} />}</ClientOnly>
