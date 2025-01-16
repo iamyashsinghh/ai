@@ -1,11 +1,11 @@
 {
-  "name": "Yash",
+  "name": "yash",
   "description": "An AI Agent",
   "private": true,
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
-  "version": "0.0.6",
+  "version": "0.0.5",
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
     "build": "remix vite:build",
