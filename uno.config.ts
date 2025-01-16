@@ -35,17 +35,17 @@ const BASE_COLORS = {
     950: '#0A0A0A',
   },
   accent: {
-    50: '#F8F5FF',
-    100: '#F0EBFF',
-    200: '#E1D6FF',
-    300: '#CEBEFF',
-    400: '#B69EFF',
-    500: '#9C7DFF',
-    600: '#8A5FFF',
-    700: '#7645E8',
-    800: '#6234BB',
-    900: '#502D93',
-    950: '#2D1959',
+    50: '#E6F1FF',
+    100: '#CCE4FF',
+    200: '#99C8FF',
+    300: '#66A9FF',
+    400: '#338BFF',
+    500: '#4a90e2',
+    600: '#3A78C1',
+    700: '#336099',
+    800: '#2A4D7A',
+    900: '#1F3A56',
+    950: '#10222D',
   },
   green: {
     50: '#F0FDF4',
@@ -99,7 +99,7 @@ const COLOR_PRIMITIVES = {
 
 export default defineConfig({
   safelist: [
-    ...Object.keys(customIconCollection[collectionName]||{}).map(x=>`i-bolt:${x}`)    
+    ...Object.keys(customIconCollection[collectionName]||{}).map(x=>`i-bolt:${x}`)
   ],
   shortcuts: {
     'bolt-ease-cubic-bezier': 'ease-[cubic-bezier(0.4,0,0.2,1)]',
